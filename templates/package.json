@@ -1,0 +1,29 @@
+{
+  "name": "websocket-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn tsc && vitest --passWithNoTests",
+    "start": "vite serve --port 8081",
+    "build": "yarn tsc && vite build",
+    "tsc": "tsc",
+    "prettier:fix": "./node_modules/.bin/prettier './src/**/*.(ts|tsx|scss)' --write",
+    "postinstall": "cd ../ && husky install ./frontend/.husky && cd frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "formik": "^2.4.6",
+    "react": "^18.3.1",
+    "react-color": "^2.19.3",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.2",
+    "uuid": "^10.0.0",
+    "vite": "^5.4.8"
+  }
+}
